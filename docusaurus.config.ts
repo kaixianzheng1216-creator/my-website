@@ -40,6 +40,26 @@ const config: Config = {
             } satisfies Preset.Options,
         ],
     ],
+    plugins: [
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'tech',
+                path: 'docs-tech',
+                routeBasePath: 'tech',
+                sidebarPath: './sidebarsTech.ts',
+            },
+        ],
+        [
+            '@docusaurus/plugin-content-docs',
+            {
+                id: 'requirements',
+                path: 'docs-requirements',
+                routeBasePath: 'requirements',
+                sidebarPath: './sidebarsRequirements.ts',
+            },
+        ],
+    ],
     themeConfig: {
         image: 'img/docusaurus-social-card.jpg',
         colorMode: {
@@ -56,9 +76,27 @@ const config: Config = {
                     type: 'docSidebar',
                     sidebarId: 'tutorialSidebar',
                     position: 'left',
-                    label: '文档',
+                    label: 'Docusaurus 教程',
                 },
-                {to: '/blog', label: '博客', position: 'left'},
+                {
+                    type: 'docSidebar',
+                    docsPluginId: 'requirements',
+                    sidebarId: 'requirementsSidebar',
+                    position: 'left',
+                    label: '需求文档',
+                },
+                {
+                    type: 'docSidebar',
+                    docsPluginId: 'tech',
+                    sidebarId: 'techSidebar',
+                    position: 'left',
+                    label: '技术文档',
+                },
+                {
+                    to: '/blog',
+                    label: '更新日志',
+                    position: 'left'
+                },
             ],
         },
         footer: {
