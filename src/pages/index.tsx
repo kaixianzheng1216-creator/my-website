@@ -24,8 +24,8 @@ export default function Home(): ReactNode {
     const {siteConfig} = useDocusaurusContext();
     return (
         <Layout
-            title={`欢迎使用 ${siteConfig.title}`}
-            description="使用 Docusaurus 构建的中文文档站点，帮助你快速创建、管理和发布文档。">
+            title={`${siteConfig.title}`}
+            description="使用 Docusaurus 构建的文档站点">
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
