@@ -15,9 +15,9 @@ sidebar_position: 2
 在 `docs/hello.md` 创建一个 Markdown 文件：
 
 ```md title="docs/hello.md"
-# Hello
+# 你好
 
-This is my **first Docusaurus document**!
+这是我的 **第一篇 Docusaurus 文档**！
 ```
 
 新文档现在可以在 [http://localhost:3000/docs/hello](http://localhost:3000/docs/hello) 访问。
@@ -30,13 +30,13 @@ Docusaurus 会从 `docs` 目录自动 **创建侧边栏**。
 
 ```md title="docs/hello.md" {1-4}
 ---
-sidebar_label: 'Hi!'
+sidebar_label: '你好！'
 sidebar_position: 3
 ---
 
-# Hello
+# 你好
 
-This is my **first Docusaurus document**!
+这是我的 **第一篇 Docusaurus 文档**！
 ```
 
 你也可以在 `sidebars.js` 中显式地创建侧边栏：
@@ -49,7 +49,7 @@ export default {
     'hello',
     {
       type: 'category',
-      label: 'Tutorial',
+      label: '教程',
       items: ['tutorial-basics/create-a-document'],
     },
   ],

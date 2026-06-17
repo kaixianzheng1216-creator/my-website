@@ -14,13 +14,13 @@ Markdown 文档的顶部有一段元数据，称为 [Front Matter](https://jekyl
 // highlight-start
 ---
 id: my-doc-id
-title: My document title
-description: My document description
+title: 我的文档标题
+description: 我的文档描述
 slug: /my-custom-url
 ---
 // highlight-end
 
-Markdown content
+Markdown 内容
 ```
 
 ## 标题 {/* #my-heading-id */}
@@ -28,9 +28,9 @@ Markdown content
 Docusaurus 支持使用标准的 `#` 语法编写 Markdown 标题，这些标题会自动加入目录。`#` 的数量对应标题的级别。
 
 ```md
-## Headings
+## 标题
 
-My text
+我的文本
 ```
 
 ### 自定义标题 ID {/* #my-custom-id */}
@@ -38,7 +38,7 @@ My text
 在标题文本后加上 `{/* #my-custom-id */}`，可以为标题显式指定一个锚点 ID，用于链接跳转。
 
 ```md
-### Heading Ids {/_ #my-custom-id _/}
+### 标题 ID {/_ #my-custom-id _/}
 ```
 
 ## 链接
@@ -46,14 +46,14 @@ My text
 支持常规的 Markdown 链接，可以使用 URL 路径或相对文件路径。
 
 ```md
-Let's see how to [Create a page](/create-a-page).
+让我们看看如何[创建页面](/create-a-page)。
 ```
 
 ```md
-Let's see how to [Create a page](./create-a-page.mdx).
+让我们看看如何[创建页面](./create-a-page.mdx)。
 ```
 
-**效果：** Let's see how to [Create a page](./create-a-page.mdx).
+**效果：** 让我们看看如何[创建页面](./create-a-page.mdx)。
 
 ## 图片
 
@@ -62,15 +62,15 @@ Let's see how to [Create a page](./create-a-page.mdx).
 你可以使用绝对路径来引用 `static` 目录中的图片（`static/img/docusaurus.png`）：
 
 ```md
-![Docusaurus logo](/img/docusaurus.png)
+![Docusaurus 标志](/img/docusaurus.png)
 ```
 
-![Docusaurus logo](/img/docusaurus.png)
+![Docusaurus 标志](/img/docusaurus.png)
 
 你也可以使用相对于当前文件的路径来引用图片。这对于将图片与使用它的 Markdown 文件放在同一目录下非常有用：
 
 ```md
-![Docusaurus logo](./img/docusaurus.png)
+![Docusaurus 标志](./img/docusaurus.png)
 ```
 
 ## 代码块
@@ -80,14 +80,14 @@ Let's see how to [Create a page](./create-a-page.mdx).
 ````md
 ```jsx title="src/components/HelloDocusaurus.js"
 function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+  return <h1>你好，Docusaurus！</h1>;
 }
 ```
 ````
 
 ```jsx title="src/components/HelloDocusaurus.js"
 function HelloDocusaurus() {
-  return <h1>Hello, Docusaurus!</h1>;
+  return <h1>你好，Docusaurus！</h1>;
 }
 ```
 
@@ -96,15 +96,15 @@ function HelloDocusaurus() {
 Docusaurus 提供了一种特殊语法来创建提示与警告框：
 
 ```md
-:::tip[My tip]
+:::tip[我的小贴士]
 
-Use this awesome feature option
+使用这个超棒的功能选项
 
 :::
 
-:::danger[Take care]
+:::danger[请注意]
 
-This action is dangerous
+此操作存在风险
 
 :::
 ```
