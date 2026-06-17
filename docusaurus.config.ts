@@ -3,8 +3,7 @@ import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
 
 const config: Config = {
-    title: '我的网站',
-    tagline: '一个使用 Docusaurus 构建的中文文档站点',
+    title: '基于 Docusaurus 构建的文档站点',
     favicon: 'img/favicon.ico',
     future: {
         v4: true,
@@ -47,9 +46,9 @@ const config: Config = {
             respectPrefersColorScheme: true,
         },
         navbar: {
-            title: '我的网站',
+            title: 'Docusaurus',
             logo: {
-                alt: '我的网站 Logo',
+                alt: 'Docusaurus Logo',
                 src: 'img/logo.svg',
             },
             items: [
@@ -60,14 +59,6 @@ const config: Config = {
                     label: '文档',
                 },
                 {to: '/blog', label: '博客', position: 'left'},
-                {
-                    href: 'https://github.com/facebook/docusaurus',
-                    label: 'GitHub',
-                    position: 'right',
-                },
-                {
-                    type: 'docsVersionDropdown',
-                },
             ],
         },
         footer: {
