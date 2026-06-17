@@ -1,14 +1,17 @@
-# Dependencies
+# 依赖
 /node_modules
 
-# Production
+# 生产构建产物
 /build
 
-# Generated files
+# 生成文件
 .docusaurus
 .cache-loader
 
-# Misc
+# 本地工具状态
+.omo/
+
+# 其他
 .DS_Store
 .env.local
 .env.development.local
