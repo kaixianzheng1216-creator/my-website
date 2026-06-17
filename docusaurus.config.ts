@@ -67,7 +67,7 @@ const config: Config = {
                     title: '文档',
                     items: [
                         {
-                            label: '文档入门',
+                            label: '文档',
                             to: '/docs/intro',
                         },
                     ],
