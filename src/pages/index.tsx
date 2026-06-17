@@ -25,7 +25,7 @@ export default function Home(): ReactNode {
     return (
         <Layout
             title={`${siteConfig.title}`}
-            description="使用 Docusaurus 构建的文档站点。">
+        >
             <HomepageHeader/>
             <main>
                 <HomepageFeatures/>
