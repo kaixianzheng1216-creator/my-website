@@ -40,7 +40,20 @@ const config: Config = {
             } satisfies Preset.Options,
         ],
     ],
+    themes: [
+        [
+            require.resolve('@easyops-cn/docusaurus-search-local'),
+            {
+                hashed: true,
+                language: ['zh', 'en'],
+                highlightSearchTermsOnTargetPage: true,
+                docsRouteBasePath: ['/', 'tech', 'requirements'],
+            },
+        ],
+        '@docusaurus/theme-mermaid',
+    ],
     plugins: [
+        'docusaurus-plugin-image-zoom',
         [
             '@docusaurus/plugin-content-docs',
             {
@@ -76,7 +89,7 @@ const config: Config = {
                     type: 'docSidebar',
                     sidebarId: 'tutorialSidebar',
                     position: 'left',
-                    label: 'Docusaurus 教程',
+                    label: '教程文档',
                 },
                 {
                     type: 'docSidebar',
