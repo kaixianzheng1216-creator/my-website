@@ -25,6 +25,7 @@ const config: Config = {
                     sidebarPath: './sidebars.ts',
                 },
                 blog: {
+                    blogSidebarTitle: '更新日志',
                     showReadingTime: true,
                     feedOptions: {
                         type: ['rss', 'atom'],
@@ -107,8 +108,8 @@ const config: Config = {
                 },
                 {
                     to: '/blog',
-                    label: '更新日志',
-                    position: 'left'
+                    position: 'left',
+                    label: '更新日志'
                 },
             ],
         },
